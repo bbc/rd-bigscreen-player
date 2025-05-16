@@ -735,7 +735,7 @@ function MSEStrategy(
   }
 
   function customiseSubtitles(options) {
-    return mediaPlayer && mediaPlayer.updateSettings({ streaming: { text: { imsc: { options } } } })
+    return mediaPlayer && options && mediaPlayer.updateSettings({ streaming: { text: { imsc: { options } } } })
   }
 
   function getDuration() {
